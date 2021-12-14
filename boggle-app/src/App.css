@@ -1,0 +1,16 @@
+.App {
+  color: #282c34;
+  width: 60%;
+  margin: auto;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.profile-button {
+  
+}

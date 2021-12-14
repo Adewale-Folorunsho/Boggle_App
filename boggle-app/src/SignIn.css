@@ -1,0 +1,39 @@
+.page-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.login-box > * {
+    margin-bottom: 20px!important;
+}
+
+.box-header {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.alt-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.log-sign-error {
+    text-align: center;
+    color: #f00;
+}

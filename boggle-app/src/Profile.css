@@ -1,0 +1,15 @@
+.profile {
+   width: 50%;
+    margin: 100px auto 0 auto;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-header > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
