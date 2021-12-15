@@ -14,7 +14,7 @@ const SignUp = ({setShouldShowSignIn}) => {
   const [signUpError, setSignUpError] = useState(null);
 
     
-  const genericError = "An  error occurred while signing you up, please try again.";
+  const genericError = "There was an error while trying to sign up";
     
   const doSignUp = () => {
     setSignUpError(null);
@@ -32,7 +32,7 @@ const SignUp = ({setShouldShowSignIn}) => {
         .catch((e) => {
         let displayMessage = genericError;
         if (e.code === 'auth/email-already-in-use'){
-            displayMessage = "Email address already in use";
+            displayMessage = "This email address already exists.";
         }
         setSignUpError(displayMessage);
         console.log(e)
@@ -61,7 +61,7 @@ const SignUp = ({setShouldShowSignIn}) => {
               <TextField label="Name" variant="outlined" value={name} onChange={(e) => setName(e.target.value)} />
               <TextField label="Email address" variant="outlined" value={email} onChange={(e) => setEmail(e.target.value)} />
               <TextField label="Password" variant="outlined" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-              <Button variant="outlined" onClick={doSignUp}>Sign me up</Button>
+              <Button variant="outlined" onClick={doSignUp}>Sign Up</Button>
           </div>
           <div className="alt-buttons">
               <Button variant="outlined" onClick={doGoogleSignUp}>Sign Up with Google</Button>
